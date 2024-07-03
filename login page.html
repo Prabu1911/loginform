@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        {
+            padding: 0px;
+            margin: 0px;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="date"],
+        input[type="email"], textarea
+        {
+            width: 100%;
+            padding:5px ;
+            outline: none;
+            background-color: lightgray;
+            opacity: 0.55;
+        }
+         input:focus,textarea:focus{
+            opacity: 1.0;
+        }
+        fieldset{
+            padding: 10px;
+        }
+        input[type="radio"]{
+            margin: 5px;
+        }
+        button{
+            width: 100%;
+            padding: 5px;
+        }
+        .submit{
+            background-color: green;
+            color: white;
+            opacity: 0.75;
+        }
+        .raset{
+            background-color: blue;
+            color: white;
+            opacity:0.75;
+        }
+        button:hover{
+            opacity: 1.0;
+        }
+        h1{
+            text-align: center;
+            background-color: blue;
+            color: white;
+        }
+        body{
+            background-color: azure;
+        }
+    </style>
+</head>
+<body>
+    <h1>registration form</h1>
+    <form action="">
+        <label for="">first name</label>
+        <input type="text" placeholder="enter your name" required/>
+        <label for="">last name</label>
+        <input type="text" placeholder="enter your last name"/>
+        <label for="">address</label>
+        <textarea rows="5">
+
+        </textarea>
+        <label for="">email</label>
+        <input type="email" placeholder="enter your emaid id" required/><br/>
+        <label for="">contact number</label>
+        <input type="number" placeholder="enter your contact number" required><br/>
+        <fieldset>
+        <label for="">gender</label>
+        <input type="radio" name="gender">male
+        <input type="radio" name="gender">female
+        </fieldset>
+        <label for="">date of birth</label>
+        <input type="date">
+        <label for="">cgpa</label>
+        <input type="text">
+        <button type="submit" class="submit">submit</button>
+        <button type="reset" class="reset">cancel</button>
+        
+        
+    </form>
+</body>
+</html>
